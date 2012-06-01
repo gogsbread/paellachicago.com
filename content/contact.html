@@ -1,0 +1,205 @@
+﻿<div id="contentwrapper">
+    <!-- Note: 
+    All content pages have 2 sections
+        1) The HTML content should be wrapped in a <div> and bear the id mentioned in 'CONTENT_PAGE_HTML_ID' in 
+
+settings.json.
+            Eg: <div id="content"></div>
+            All content pages are rendered inside the main page's container
+        2) The CSS content should be wrapped in a <div> and bear the id mentioned in 'CONTENT_PAGE_CSS_ID' in 
+settings.json.
+-->
+    <div id="content">
+        <div id="contact-wrapper">
+            <div id="contact">
+                <div class="email-form">
+                    <form name="contact" method="post" action="">
+                          <label class="text-label" for="iptName" id="lblName">Name *</label>
+                          <label for="lblName" class="colon" id="lblNameColon">:</label>
+                          <input class="text-input" type="text" id="iptName" size="50" value=""  tabindex="1"/>
+                          <label class="error" for="iptName" id="lblNameError">*This field is required.</label><br />
+      
+                          <label class="text-label" for="iptEmail" id="lblEmail">Email *</label>
+                          <label for="lblEmail" class="colon" id="lblEmailColon">:</label>
+                          <input class="text-input" type="text" id="iptEmail" size="75" value=""  tabindex="2"/>
+                          <label class="error" for="iptEmail" id="lblEmailError">*This field is required.</label><br />
+      
+                          <label class="text-label"  for="iptPhone" id="lblPhone">Phone</label>
+                          <label for="lblPhone" class="colon" id="lblPhoneColon">:</label>
+                          <input class="text-input"  type="text" id="iptPhone" size="30" value="" tabindex="3"/><br />
+
+                          <label class="text-label"  for="iptZip" id="lblZip">Party Zip</label>
+                          <label for="lblZip" class="colon" id="lblZipColon">:</label>
+                          <input class="text-input"  type="text" id="iptZip" size="5" value="" tabindex="4"/><br />
+
+                          <label class="text-label"  for="iptZip" id="lblMessage">Message *</label>
+                          <label for="lblMessage" class="colon" id="lblMessageColon">:</label>
+                          <textarea class="text-input" id="txtareaMessage" tabindex="5"></textarea>
+                          <label class="error" for="txtareaMessage" id="lblMessageError">*This field is required.</label><br />
+    	                    <br />
+                          <input type="submit" class="button" id="btnSubmit" value="Send" tabindex="6" />
+                          <input type="submit" class="button" id="btnClear" value="Clear" tabindex="7"/>
+                      </form>
+                </div>
+                <div class="phone-email-text-wrapper">
+                    <div class="phone-email-text">    
+                        <span>Call</span><br /> <span class="bold">708-218-8582</span><br /><span class="bold">708-381-9096</span> <br /><br /> <span>Email</span> <br /> <span class="bold">paellachicago@yahoo.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="loader">
+                <img src="img/loader.gif" alt="please wait.." />
+            </div>
+        </div>
+    </div>
+    <div id="css">
+        #contact-wrapper
+        { 
+            width: 100%; 
+            position:relative; 
+            margin:0px auto; 
+            -moz-border-radius: 10px; 
+            -webkit-border-radius:10px; 
+            border-radius: 10px; 
+            background-color:White; 
+            z-index:400; 
+            height:550px;
+        }
+
+        #contact-wrapper #contact
+        {
+            width: 768px;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            margin: -200px auto -200px -384px;
+            top: 50%;
+        }
+
+        #contact .email-form
+        {
+            border-right:2px solid #FF3333;
+            position:relative;
+            float:left;
+            width:492px;
+            height:375px;
+        }
+        #contact .phone-email-text-wrapper
+        {
+            position: relative;
+            margin-left:558px;
+            width: 260px;
+
+        }
+
+        #contact .text-label
+        {
+            color: #CC0000;
+            font-family: Georgia,serif;
+            font-size: 16pt;
+            left:0;
+        }
+
+        #contact .email-form .text-input
+        {
+            background-color: #ffffcc;
+            border: 1px solid #cccccc;
+            width:280px;
+            height:28px;
+            padding-left:3px;
+            -moz-box-shadow: 0 0 5px 0px rgba(0,0,0,.45);
+            -webkit-box-shadow: 0 0 5px 0px rgba(0,0,0,.45);
+            box-shadow: 0 0 5px 0px rgba(0,0,0,.45);
+            left:140px;
+        }
+
+        #contact .email-form .colon
+        {
+            color: #CC0000; 
+            padding-left:3px;
+            left:110px;
+        }
+
+        #contact .email-form .error
+        {
+            color: #CC0000;
+            left:140px;
+        }
+        
+        #contact .email-form #lblName { position:absolute; top:0;}
+        #contact .email-form #lblNameColon  { position:absolute; top:8px;}
+        #contact .email-form #iptName { position:absolute; top:0;}
+        #contact .email-form #lblNameError  { position:absolute; top:36px;  }
+        
+
+        #contact .email-form #lblEmail { position:absolute; top:70px;}
+        #contact .email-form #lblEmailColon  { position:absolute; top:75px;}
+        #contact .email-form #iptEmail { position:absolute; top:70px;}
+        #contact .email-form #lblEmailError  { position:absolute; top:106px;  }
+
+        #contact .email-form #lblPhone { position:absolute; top:140px;}
+        #contact .email-form #lblPhoneColon  { position:absolute; top:145px;}
+        #contact .email-form #iptPhone { position:absolute; top:140px;}
+
+        #contact .email-form #lblZip { position:absolute; top:210px;}
+        #contact .email-form #lblZipColon  { position:absolute; top:215px;}
+        #contact .email-form #iptZip { position:absolute; top:210px;}
+
+        #contact .email-form #lblMessage { position:absolute; top:280px;}
+        #contact .email-form #lblMessageColon  { position:absolute; top:285px;}
+        #contact .email-form #txtareaMessage { position:absolute; top:280px;height:100px;}
+        #contact .email-form #lblMessageError  { position:absolute; top:386px;}
+
+        #contact .email-form #btnSubmit {position:absolute;left:170px;}  
+        #contact .email-form #btnClear {position:absolute;left:330px;}  
+
+        #contact .phone-email-text-wrapper .phone-email-text
+        {
+            color: #CC0000;
+            font-family: Georgia,serif;
+            font-size: 16pt;
+            position:relative;
+            top:80px;
+        }
+        .bold
+        {
+            font-weight:bold;
+        }
+
+        #contact .button 
+        {
+            background: transparent url('img/contact/button.png') no-repeat scroll top right;
+            width: 120px;
+	        height: 40px;
+            top:410px;
+            color: #CC0000;
+            font-family: Georgia,serif;
+            font-size: 16pt;
+        }
+        
+        #contact #status
+        {
+            position: absolute;
+            left: 50%;
+            margin: -200px auto -200px -300px;
+            top: 50%;
+        }
+        #contact-wrapper .loader
+        {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -50px auto -200px -25px;
+        }
+
+
+    </div>
+    <div id="js">
+        <div id="file">
+            js/paellachicago.contact.script.js</div>
+        <div id="init">
+            paellachicago.contact.Init()</div>
+        <div id="dispose">
+            paellachicago.contact.Dispose()</div>
+    </div>
+</div>

@@ -1,0 +1,271 @@
+﻿<div id="contentwrapper">
+    <!-- Note: 
+    All content pages have 2 sections
+        1) The HTML content should be wrapped in a <div> and bear the id mentioned in 'CONTENT_PAGE_HTML_ID' in 
+
+settings.json.
+            Eg: <div id="content"></div>
+            All content pages are rendered inside the main page's container
+        2) The CSS content should be wrapped in a <div> and bear the id mentioned in 'CONTENT_PAGE_CSS_ID' in 
+settings.json.
+        3) The master page should hold the framework for josebox and the pagecontent. 
+-->
+    <!-- 
+    1)With current architecture, each individual page cannot be tested because it lacks HTML tags. Think of a way to solve 
+
+this.
+    2)Resovle namespacing conflicts from CSS.This could also help prevent reappending the same css
+    3) Should make the child CSS independant of parent page- Change the note above.
+    4) Change names of Jose box and Jose box wrapper
+    
+-->
+    <div id="content">
+        <div id="josebox" class="tabContent">
+            <div id="josebox-wrapper" class="clearfix">
+                <div id="jose-pitch">
+                    <h1>
+                        I am Jose. I take orders for paella in chicago and its suburbs. 
+                        This website gives you useful information about paella and I am here to cater for your next paella party.</h1>
+                </div>
+                <div id="jose-image">
+                    <img src="img\Jose_114_105.jpg" alt="Jose's Image" title="Jose's Image"/>
+                </div>
+            </div>
+        </div>
+        <div id="contentbox" class="tabContent" style="margin-top: 10px;margin-bottom: 10px">
+            <div id="contentbox-wrapper">
+                <div id="gallery-left">
+                    <!-- box for main display -->
+                    <table class="framework" cellspacing="0" cellpadding="0">
+                        <!--Framework for gallery widget -->
+                        <tr id="row1">
+                            <td id="col1" colspan="2" style="height: 26px">
+                            </td>
+                            <td id="col3" rowspan="2" style="width: 26px">
+                            </td>
+                        </tr>
+                        <tr id="row2">
+                            <td id="col1" rowspan="2" style="width: 26px">
+                            </td>
+                            <td id="picture-frame" style="height: 308px; width: 568px; text-align: center">
+                                <div id="slider">
+                                    <ul id="gallery" style="width: 558px">
+                                        <li>
+                                            <img src="img/home/Home_1.jpg" alt="Paella Valenciana closeup" width="558px" height="282px" title="<b>Paella</b> is a hispanic food that is prepared by simmering meat, sea food, rice, vegetables, saffron and other seasoning" /></li>
+                                       <li>
+                                            <img src="img/home/Home_5.jpg" alt="Paella Valenciana with chicken" width="558px" height="282px" title="<b>Paella Valenciana</b> <br/><br/>Original paella made of chicken,pork and/or rabbit." /></li>
+                                        <li>
+                                            <img src="img/home/Home_3.jpg" alt="Paella Marisco" width="558px" height="282px" title="<b>Paella Marisco</b> <br/><br/>Seafood variant of the traditional paella." /></li>
+                                        <li>
+                                            <img src="img/home/Home_4.jpg" alt="Paella Mixta" width="558px" height="282px" title="<b>Paella Mixta</b> <br/><br/>This variant gives the best of both terrestrial and marine world." /></li>
+                                         <li>
+                                            <img src="img/home/Home_2.jpg" alt="Paella Valenciana long shot" width="558px" height="282px" title="Do you know that the world's largest paella fed <b>110,000</b> people!!!<br/><br/>Let us know your party location and we will cater to the popular demand." /></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="row3">
+                            <td id="col2" colspan="2" style="height: 26px">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="text-right">
+                    <h2>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="shapes" style="display: none">
+            <div class="2row-topred">
+                <table style="border-spacing: 2px" cellspacing="0" cellpadding="0">
+                    <tr id="row1">
+                        <td colspan="2">
+                        </td>
+                    </tr>
+                    <tr id="row2">
+                        <td id="col1">
+                        </td>
+                        <td id="col2">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="2row-bottomred">
+                <table style="border-spacing: 2px" cellspacing="0" cellpadding="0">
+                    <tr id="row1">
+                        <td id="col1">
+                        </td>
+                        <td id="col2">
+                        </td>
+                    </tr>
+                    <tr id="row2">
+                        <td colspan="2">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="2column-rightred">
+                <table style="border-spacing: 2px" cellspacing="0" cellpadding="0">
+                    <tr id="row1">
+                        <td id="col1">
+                        </td>
+                        <td id="col2" rowspan="2">
+                        </td>
+                    </tr>
+                    <tr id="row2">
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="2column-leftred">
+                <table style="border-spacing: 2px" cellspacing="0" cellpadding="0">
+                    <tr id="row1">
+                        <td id="col1" rowspan="2">
+                        </td>
+                        <td id="col2">
+                        </td>
+                    </tr>
+                    <tr id="row2">
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="css">
+.tabContent{ 
+-moz-border-radius: 10px; 
+-webkit-border-radius: 10px; 
+border-radius: 10px; 
+position:relative;
+z-index:400; 
+background: White; 
+}
+
+#josebox {
+    height: 150px;
+    position: relative;
+}
+#josebox-wrapper {
+    width: 780px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    margin: -60px auto -60px -370px;
+    top: 50%;
+}
+#jose-pitch {
+    width: 588px;
+    float: left;
+    display:inline-block;
+    position:relative;
+    top:13px;
+}
+#jose-pitch h1 {
+    font-size: 15pt;
+    font-family: "fertigo-pro",sans-serif;;
+    color: #cc0000;
+    letter-spacing:1px;
+}
+#jose-image {
+    position: relative;
+    top:5px;
+    margin-left:595px;
+    height: 105px;
+    width: 114px;
+    border: 3px solid #666666;
+    -moz-box-shadow: 0 0 5px 0px rgba(0,0,0,.75);
+    -webkit-box-shadow: 0 0 5px 0px rgba(0,0,0,.75);
+    box-shadow: 0 0 5px 0px rgba(0,0,0,.75);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.framework{
+
+}
+
+#picture-frame #slider {
+            position: relative;
+            overflow: hidden;
+}
+#picture-frame #gallery{
+            overflow: hidden;
+}        
+#picture-frame #gallery li {
+    
+}
+        
+#contentbox {
+    height: 390px;
+}
+#contentbox-wrapper {
+    height: 370px;
+    width: 820px;
+    position: relative;
+    left: 62px;
+    top: 20px;
+}
+#contentbox-wrapper #gallery-left {
+    width: 630px;
+    height:370px;
+    float: left;
+}
+#contentbox-wrapper #text-right{
+    width: 184px;
+    height: 240px;
+    float: right;
+}
+#contentbox-wrapper #text-right h2 {
+    font-family: 'Tinos', serif;
+    font-size: 15pt;
+    color: #cc0000;
+    position: relative;
+    top:40px;
+    left:10px;
+    letter-spacing:1.5px;
+    text-align:left;
+}
+.hor-bar-light-grey {
+    height: 10px;
+    width: 556px;
+    background-color: #cccccc;
+}
+.hor-bar-dark-grey {
+    height: 10px;
+    width: 556px;
+    background-color: #666666;
+}
+.hor-rec-red {
+    width: 32px;
+    background-color: #cc0000;
+}
+.ver-bar-light-grey {
+    height: 296px;
+    width: 10px;
+    background-color: #cccccc;
+}
+.ver-bar-dark-grey {
+    height: 296px;
+    width: 10px;
+    background-color: #666666;
+}
+.ver-rec-red {
+    height: 32px;
+    background-color: #cc0000;
+}   
+
+    </div>
+    <div id="js">
+        <div id="file">
+            js/paellachicago.home.script.js</div>
+        <div id="init">
+            paellachicago.home.Init()</div>
+        <div id="dispose">
+            paellachicago.home.Dispose()</div>
+    </div>
+</div>

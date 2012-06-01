@@ -1,0 +1,355 @@
+﻿<div id="contentwrapper">
+    <!-- Note: 
+    All content pages have 2 sections
+        1) The HTML content should be wrapped in a <div> and bear the id mentioned in 'CONTENT_PAGE_HTML_ID' in 
+
+settings.json.
+            Eg: <div id="content"></div>
+            All content pages are rendered inside the main page's container
+        2) The CSS content should be wrapped in a <div> and bear the id mentioned in 'CONTENT_PAGE_CSS_ID' in 
+settings.json.
+        3) The master page should hold the framework for josebox and the pagecontent. 
+-->
+    <div id="content">
+        <div id="menu-wrapper">
+            <table id="menus" class="framework" cellspacing="0" cellpadding="0" >
+                <tr>
+                    <td>
+                        <div id="paella_valenciana">
+                            <div class="menu-title clearfix">
+                                <div class="menu-red-box-topleft">
+                                </div>
+                                <div class="menu-title-text center">Paella Valenciana
+                                </div>
+                            </div>
+                            <div class="menu-image center">
+                                <img src="img\menu\paella_valenciana.jpg" title="Paella Valenciana" alt="Paella Valenciana"></img>
+                            </div>
+                            <div class="menu-description center">Rice with your choice of seafood, meat and vegetables, cooked with aromatic spanish saffron.
+                            </div>
+                            <div class="menu-price center">$25 per person *
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="pollo_portuguesa">
+                            <div class="menu-title clearfix">
+                                <div class="menu-red-box-topright">
+                                </div>
+                                <div class="menu-title-text center">Pollo A La Portuguesa
+                                </div>
+                            </div>
+                            <div class="menu-image center">
+                                <img src="img\menu\coming_soon.jpg" title="Pollo A La Portuguesa" alt="Pollo A La Portuguesa"></img>
+                            </div>
+                            <div class="menu-description center">Chicken stew with potatoes and other vegetables
+                            </div>
+                            <div class="menu-price center">$20 per person *
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="bifes_criolla">
+                            <div class="menu-title clearfix">
+                                <div class="">
+                                </div>
+                                <div class="menu-title-text center">Bifes A La Criolla
+                                </div>
+                            </div>
+                            <div class="menu-image center">
+                                <img src="img\menu\coming_soon.jpg" title="Bifes A La Criolla" alt="Bifes A La Criolla"></img>
+                            </div>
+                            <div class="menu-description center">Veal with vegetables in tomato sauce
+                            </div>
+                            <div class="menu-price center">$20 per person *
+                            </div>
+                         </div>
+                      </td>
+                    <td>
+                        <div id="chorizos_espanola">
+                            <div class="menu-title clearfix">
+                                <div class="">
+                                </div>
+                                <div class="menu-title-text center">Chorizos A La Espanola
+                                </div>
+                            </div>
+                            <div class="menu-image center">
+                                <img src="img\menu\coming_soon.jpg" title="Chorizos A La Espanola" alt="Chorizos A La Espanola"></img>
+                            </div>
+                            <div class="menu-description center">Chorizo with vegetables in spanish style
+                            </div>
+                            <div class="menu-price center">$20 per person *
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="filet_mignon">
+                            <div class="menu-title clearfix">
+                                <div class="menu-title-text center">Filet Mignon Con Hongos
+                                </div>
+                            </div>
+                            <div class="menu-image center">
+                                <img src="img\menu\coming_soon.jpg" title="Paella Valenciana" alt="Paella Valenciana"></img>
+                            </div>
+                            <div class="menu-description center">Filet Mignon with mushrooms
+                            </div>
+                            <div class="clearfix">
+                                <div class="menu-price center">ask for price *
+                                </div>
+                                <div class="menu-red-box-bottomleft">
+                                </div>
+                             </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="pintxos">
+                            <div class="menu-title clearfix">
+                                <div class="menu-title-text center">Pintxos
+                                </div>
+                            </div>
+                            <div class="menu-image center">
+                                <img src="img\menu\coming_soon.jpg" title="Pollo A La Portuguesa" alt="Pollo A La Portuguesa"></img>
+                            </div>
+                            <div class="menu-description center">Spanish appetizer with serrano ham and olive oil topped with cheese,peppers and artichokes
+                            </div>
+                            <div class="clearfix">
+                                <div class="menu-price center">ask for price *
+                                </div>
+                                <div class="menu-red-box-bottomright">
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="price-disclaimer">
+                * Prices are indicative and varies based on the size of the party.Please call or email for actual prices.
+            </div>
+        </div>
+    </div>
+    <div id="css">
+        #menu-wrapper
+        {
+            width: 100%;
+            position:relative;
+            margin:0px auto;
+            -moz-border-radius: 10px; 
+            -webkit-border-radius: 10px; 
+            border-radius: 10px; 
+            background-color:White;
+            z-index:400;
+            padding:26px 0;
+            
+        }
+        #menus
+        {
+            width: 820px;
+            position:relative;
+            margin:0px auto;
+        }
+        #menus.framework
+        {
+        }
+        #menus tr
+        {
+            height:245px;
+        }
+        #menus tr td
+        {
+            width:50%;
+            height:245px;
+        }
+        .center
+        {
+            width:50%;
+            margin:0 auto;
+        }
+        #menus #paella_valenciana
+        {
+            height:100%;
+            border-bottom: 2px solid #FF3333;
+            border-right: 2px solid #FF3333;
+        }
+        #menus #paella_valenciana .menu-description
+        {
+            height:50px;
+        }
+        #menus #paella_valenciana .menu-price
+        {
+            position:relative;
+            top:10px;
+            width:32%;
+        }
+        #menus #pollo_portuguesa
+        {
+            height:100%;
+            border-bottom: 2px solid #FF3333;
+        }
+        #menus #pollo_portuguesa .menu-title-text
+        {
+            width:68%;
+        }
+        #menus #pollo_portuguesa .menu-price
+        {
+            position:relative;
+            top:10px;
+            width:32%;
+        }
+        #menus #bifes_criolla
+        {
+            height:100%;
+            border-right: 2px solid #FF3333;
+            border-bottom: 2px solid #FF3333;
+        }
+        
+        #menus #bifes_criolla .menu-price
+        {
+            width:32%;
+            position:relative;
+            top:10px;
+        }
+
+        #menus #chorizos_espanola
+        {
+            height:100%;
+            border-bottom: 2px solid #FF3333;
+        }
+        #menus #chorizos_espanola .menu-title-text
+        {
+            width:72%;
+        }
+        #menus #chorizos_espanola .menu-price
+        {
+            width:32%;
+            position:relative;
+            top:10px;
+        }
+        #menus #filet_mignon
+        {
+            height:100%;
+            border-right: 2px solid #FF3333;
+        }
+        #menus #filet_mignon .menu-price
+        {
+            width:32%;
+            position:relative;
+            top:-10px;
+        }
+        #menus #filet_mignon .menu-title-text
+        {
+            width:77%;
+        }
+        #menus #pintxos
+        {
+            height:100%;
+        }
+        #menus #pintxos .menu-title-text
+        {
+            width:26%;
+        }
+        #menus #pintxos .menu-price
+        {
+            position:relative;
+            top:20px;
+            width:32%;
+        }
+        #menus .menu-title
+        {
+            height:35px;
+
+        }
+        #menus .menu-title .menu-red-box-topleft
+        {
+            height:15px;
+            width:20px;
+            display:inline-block;
+            background-color:#ff3333;
+            float:left;
+            position:relative;
+            top:8px;
+        }
+        #menus .menu-title .menu-red-box-topright
+        {
+            height:15px;
+            width:20px;
+            display:inline-block;
+            background-color:#ff3333;
+            float:right;
+            position:relative;
+            top:8px;
+        }
+        #menus .menu-red-box-bottomleft
+        {
+            height:15px;
+            width:20px;
+            display:inline-block;
+            background-color:#ff3333;
+            float:left;
+            position:relative;
+            top:-8px;
+        }
+        #menus .menu-red-box-bottomright
+        {
+            height:15px;
+            width:20px;
+            display:inline-block;
+            background-color:#ff3333;
+            float:right;
+            position:relative;
+            top:-8px;
+        }
+        #menus .menu-title .menu-title-text
+        {
+            height:35px;
+            display:block;
+            color:#cc0000;
+            font-family: 'Georgia', serif;
+            font-size:20pt;
+            letter-spacing:-0.9px;
+            width:53%;
+        }
+        #menus .menu-image
+        {
+            height:125px;
+            width:64%;
+        }
+        #menus .menu-description
+        {
+            font-size:13.8pt;
+            font-family: 'Tinos', serif;
+            color:#cc0000;
+            height:40px;
+            text-align:center;
+            width:64%;
+            line-height:1;
+        }
+        #menus .menu-price
+        {
+            font-size:14pt;
+            font-family: 'Tinos', serif;
+            height:20px;
+            width:26%;
+        }
+        #menu-wrapper .price-disclaimer{
+            font-size:x-small;
+            font-family: 'Tinos', serif;
+            text-align:center;
+            position:relative;
+            top:5px;
+            color:#cc0000;
+        }
+
+    </div>
+    <div id="js">
+        <div id="file">
+            js/paellachicago.menu.script.js</div>
+        <div id="init">
+            paellachicago.menu.Init()</div>
+        <div id="dispose">
+            paellachicago.menu.Dispose()</div>
+    </div>
+</div>

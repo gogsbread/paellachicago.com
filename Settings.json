@@ -1,0 +1,22 @@
+﻿{
+	"tabs" : 
+				{
+					"Home"	: "content/home.html",
+					"Menu"	: "content/menu.html",
+					"Gallery"	: "content/gallery.html",
+					"About Me"	: "content/about.html",
+					"Contact"	: "content/contact.html"
+				}
+			 ,
+	"constants":
+					{		
+					"MASTER_CONTENT_HOLDER":"contentHolder",
+					"CONTENT_PAGE_ID":"content",
+					"CONTENT_PAGE_CSS_ID":"css",
+					"CONTENT_PAGE_JS_ID":"js",
+					"CONTENT_PAGE_JS_FILE":"file",
+					"CONTENT_PAGE_JS_INIT":"init",
+					"CONTENT_PAGE_JS_DISPOSE":"dispose"
+					}
+				
+}

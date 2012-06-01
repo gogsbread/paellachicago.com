@@ -1,0 +1,80 @@
+﻿<div id="contentwrapper">
+    <!-- Note: 
+    All content pages have 2 sections
+        1) The HTML content should be wrapped in a <div> and bear the id mentioned in 'CONTENT_PAGE_HTML_ID' in 
+
+settings.json.
+            Eg: <div id="content"></div>
+            All content pages are rendered inside the main page's container
+        2) The CSS content should be wrapped in a <div> and bear the id mentioned in 'CONTENT_PAGE_CSS_ID' in 
+settings.json.
+-->
+    <div id="content">
+        <div id="about-wrapper">
+            <div id="content-wrapper">
+                <div class="jose-image clearfix">
+                    <img src="img\about\jose standing.png" title="A title for menu image" alt="A alt for menu image"></img>
+                </div>
+                <div class="about-text">
+                    <p>PAELLA has been a tradition in my family for many years. Cooking paella is a passion that I inherited from my grandmothers who were natives of VALENCIA and BURGOS, two wonderful states in Spain.</p><br />
+                    <p>Growing up in Argentina, I honed my talent in the art of making delicious paellas and here I bring thee an authentic spanish delicacy.</p><br />
+                    <p>Paella is a dish base on rice, vegetables, seafood, fish, chicken, pork and chorizos but the key ingredient for the fantastic flavor is the Spanish saffron and the unique spice blend.</p><br />
+                    <p>There are different types of  paellas, each characterising its city of origin. 
+                        Paellas are more seafood based along the coast, and more meat based in the country. Paellas can also be prepared in a vegetarian style.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="css">
+        #about-wrapper 
+        { 
+            width: 100%; 
+            position:relative; 
+            margin:0px auto; 
+            -moz-border-radius: 10px; 
+            -webkit-border-radius:10px; 
+            border-radius: 10px; 
+            background-color:White; 
+            z-index:400; 
+            height:550px;
+        }
+
+        #about-wrapper #content-wrapper
+        {
+            width: 768px;
+            height: 385px;
+            position: absolute;
+            left: 50%;
+            margin: -210px auto -210px -384px;
+            top: 45%;
+        }
+
+        #about-wrapper #content-wrapper .jose-image
+        {
+            float: left;
+            height: 390px;
+            margin-top: 20px;
+            width: 292px;
+        }
+        #about-wrapper #content-wrapper .about-text
+        {
+            margin-left:310px;
+            line-height:200%;
+        }
+        #about-wrapper #content-wrapper p
+        {
+            color: #CC0000;
+            font-family: 'Tinos',serif;
+            font-size: 13.8pt;
+        }
+    </div>
+    <div id="js">
+        <div id="file">
+            js/paellachicago.about.script.js</div>
+        <div id="init">
+            paellachicago.about.Init()</div>
+        <div id="dispose">
+            paellachicago.about.Dispose()</div>
+    </div>
+</div>
